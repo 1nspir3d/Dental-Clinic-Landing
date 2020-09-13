@@ -1,0 +1,1599 @@
+body {
+    margin: 0 auto;
+    position: relative;
+    font-family: 'Nunito', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.page {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0 auto;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p,
+pre {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1267px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+
+.home-btn {
+    width: 100px;
+    height: 100px;
+
+    background-color: #009fe369;
+    border: 2px solid #009fe3;
+    border-radius: 50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    z-index: 10000;
+
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.home-btn:hover,
+.home-btn:focus {
+    cursor: pointer;
+    background-color: #009fe3a6;
+}
+
+/* Section */
+.section-header {
+    width: 380px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-header-title {
+    font-size: 2rem;
+}
+
+.section-header::after {
+    content: " ";
+    height: 4px;
+    border-radius: 10px;
+    background-color: #009fe393;
+    width: 60%;
+    display: block;
+    margin: 7px auto 0;
+}
+
+
+
+/* Header */
+.header {
+    background: url("../assets/imgs/backgrounds/1.png") no-repeat center bottom;
+    background-size: cover;
+    height: 974px;
+}
+
+.header-inner {
+    position: relative;
+}
+
+
+
+
+/* Top Header */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: 2px solid #000000;
+}
+
+.logo {
+    width: 312px;
+    margin-bottom: 15px;
+}
+
+.shedule-title {
+    font-size: 1.2rem;
+}
+
+.shedule-time {
+    width: 287px;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.oreder-call {
+    width: 200px;
+    display: block;
+}
+
+.call-title {
+    font-size: 1.1rem;
+    background: none;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    transition: background-color .2s linear ;
+}
+
+.call-title:hover,
+.call-title:focus {
+    background: #009fe362;
+    cursor: pointer;
+}
+
+.call-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.call-number:hover,
+.call-number:focus {
+    color: #009fe3;
+}
+
+
+
+
+/* Header Navigation */
+.nav-wrapper {
+    border-bottom: 2px solid black;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    background: #009fe3;
+    z-index: 100;
+    box-shadow: 0 0 15px 0 grey;
+
+    color: white; 
+    border: none;
+}
+
+.fixed .header-link {
+    color: white;
+}
+
+
+
+.header-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 0;
+}
+
+.header-link {
+    font-size: 1.88rem;
+    border-radius: 4px;
+    transition: background-color .2s linear;
+}
+
+.header-link:hover,
+.header-link:focus {
+    background: #009fe362;
+}
+
+
+
+
+/* Bot Header */
+.bot-header {
+    height: 706px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.doctor-photo {
+    position: absolute;
+    top: 288px;
+    left: 180px;
+    z-index: 1;
+    width: 450px;
+}
+
+.circle {
+    position: absolute; 
+}
+
+.big {
+    top: 358px;
+    left: 149px;
+}
+
+.stroke {
+    top: 256px;
+    left: 56px;
+}
+
+.medium {
+    top: 269px;
+    left: 156px;
+}
+
+.medium.first {
+    top: 725px;
+    left: 150px;
+}
+
+.medium.second {
+    top: 287px;
+    left: 613px;
+}
+
+.medium.third {
+    top: 548px;
+    left: 594px;
+}
+
+.small-1 {
+    top: 180px;
+    left: 470px;
+}
+
+.small-2 {
+    top: 400px;
+    left: 921px;
+}
+
+.small-3 {
+    top: 305px;
+    left: 1188px;
+}
+
+.small-4 {
+    top: 746px;
+    left: 1063px;
+}
+
+
+
+
+/* Left Side */
+.left-side {
+    width: 562px;
+    height: 343px;
+    z-index: 100000;
+}
+
+.header-title {
+    font-size: 3rem;
+}
+
+.underlined {
+    display: block;
+    width: max-content;
+}
+
+.underlined--header {
+    margin-bottom: 15px;
+}
+
+.underlined::after {
+    content: "";
+    height: 7px;
+    margin-top: -13px;
+
+    border-radius: 8px;
+    background-color: #009fe391;
+    display: block;
+}
+
+.header-text {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.btn {
+    border: none;
+    background-color: #009fe3;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 10px;
+
+    transition: background-color .2s linear;
+    display: block;
+    margin: 0 auto; 
+    font-weight: 700;
+}
+
+.btn:hover,
+.btn:focus,
+.input:focus {
+    background-color: #0040e3;
+    cursor: pointer;
+}
+
+.header-btn {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 1.1rem;
+    margin: 134px 0 0 0;
+}
+
+
+
+/* Discounts */
+.discounts {
+    height: 100%;
+    margin-top: 168px;
+    background: url("../assets/imgs/backgrounds/2.png") no-repeat center bottom;
+    background-size: cover;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+
+
+.discounts-title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin: 90px auto 40px;
+}
+
+.discounts-item {
+    width: 590px;
+    height: 100%;
+    margin-bottom: 25px;
+}
+
+.discounts-figure {
+    width: 490px;
+    height: 275px;
+    position: relative;
+    box-shadow: 17px 15px 20px -8px #888888;
+    border: 1px solid #e6e0e0;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.figure-photo {
+    object-fit: cover;
+}
+
+.figure-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 14px 0 0 17px;
+}
+
+.figure-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    background-color: #009fe38f;
+    border-radius: 4px;
+}
+
+.figure-price {
+    font-weight: 700;
+    color: #009fe3;
+    font-size: 1.6rem;
+}
+
+.linethrough {
+    text-decoration: line-through #009fe3;
+    font-size: 1.3rem;
+}
+
+.discounts-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+.discount-text {
+    width: 470px;
+    height: 100%;
+    max-height: 230px;
+    margin: 30px auto 0;
+
+    overflow-y: scroll ;
+}
+
+.discount-text-header {
+    font-size: 1.6rem;
+}
+
+.discount-text-list {
+    padding-left: 26px;
+    font-weight: 600;
+}
+
+.discount-btn {
+    padding: 15px 20px;
+    font-size: inherit;
+}
+
+
+
+/* Advantages */
+.advantages {
+    background: url("../assets/imgs/backgrounds/3.png") no-repeat center bottom;
+    background-size: cover;
+    height: 100%;
+    margin-top: -113px;
+    padding-top: 140px;
+    padding-bottom: 60px;
+}
+
+.advantages-slider {
+    margin-top: 180px;
+}
+
+.advantages-item {
+    width: 700px;
+    height: 240px;
+    font-size: 1.7rem;
+    color: white;
+    margin: 0 auto;
+    padding: 10px 0 0 15px;
+    text-align: center;
+}
+
+.advantages-nav {
+    padding: 0;
+    margin: 0;
+}
+
+.advantages-text {
+    width: 500px;
+    display: inline-block;
+}
+
+.slick-dots {
+    width: max-content;
+    margin: 15px auto 0;
+    padding: 0;
+    padding-bottom: 120px;
+}
+
+.slick-dots li {
+    width: 16px;
+    height: 14px;
+    float: left;
+}
+
+.slick-dots li:last-child {
+    width: 0px;
+}
+
+.slick-dots li button {
+    background: none;
+    font-size: 0;
+    border: 1px solid #009fe3;
+    border-radius: 50px;
+    padding-left: 2px;
+    padding-right: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 10px;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #009fe3;
+}
+
+
+/* Promo */
+.promo {
+    height: 100%;
+    margin-top: 160px;
+    padding-top: 20px;
+
+    background: url("../assets/imgs/backgrounds/4.jpg") no-repeat center;
+    background-size: cover;
+
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.promo-inner {
+    position: relative;
+}
+
+.promo-header {
+    width: max-content;
+}
+
+.promo-grid {
+    width: 745px;
+    height: 467px;
+
+    margin-top: 70px;
+
+    display: grid;
+    grid-template-columns: minmax(360px, 400px) minmax(360px, 400px);
+    column-gap: 30px;
+}
+
+.promo-item {
+    position: relative;
+    padding: 30px 0 0 40px;
+}
+
+.circle-promo {
+    top: 30px;
+    left: 11px;
+}
+
+.promo-text {
+    font-size: 1rem;
+    font-weight: 800;
+    z-index: 1000000;
+}
+
+.promo-btn {
+    padding: 15px 25px;
+    margin: 23px 0px 35px 25px;
+}
+
+.promo-picture {
+    position: absolute;
+    top: 332px;
+    left: 739px;
+}
+
+.promo-photo {
+    position: relative;
+    z-index: 2;
+}
+
+.promo-circle {
+    position: absolute;
+    top: -14%;
+    left: -25%;
+}
+
+.promo-stroke {
+    position: absolute; 
+    top: -30%; 
+    left: -50%;
+}
+
+.promo-right-side {
+    width: auto;
+    height: 491px;
+    position: absolute;
+    top: 203px;
+    left: 952px;
+}
+
+.promo-polygon {
+    z-index: 2;
+}
+
+.promo-info {
+    position: absolute;
+    top: 85px;
+    left: 14px;
+    z-index: 3;
+    color: white;
+}
+
+.promo-header {
+    margin-bottom: 30px;
+}
+
+.promo-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.info-experience {
+    margin-bottom: 30px;
+}
+
+.info-text {
+    width: auto;
+}
+
+
+/* Cert */
+.cert {
+    height: 100%;
+    margin-bottom: 80px;
+    padding-top: 50px;
+
+    background: url("../assets/imgs/backgrounds/5.jpg") no-repeat center;
+    background-size: cover;
+
+    border-bottom: 1px solid black;
+}
+
+.cert-slider {
+    margin-top: 50px;
+}
+
+.cert-slider .slick-list {
+    overflow: visible;
+}
+
+.cert-photo {
+    width: 300px; 
+    height: 380px;
+    margin: 0 auto;
+
+    box-shadow: 0px 0px 15px -1px #009fe3;
+}
+
+
+/* Examples */
+.examples-title {
+    width: 550px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin: 70px auto 40px;
+}
+
+.examples-btns {
+    width: 460px;
+    margin: 0 auto 60px;
+
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.example-btn {
+    padding: 15px 30px;
+
+    background: none;
+    border: 1px solid #009fe3;
+    border-radius: 4px;
+    transition: background-color .2s linear;
+    transition: color .1s linear;
+}
+
+.example-btn:hover,
+.example-btn:focus {
+    background-color: #009fe3;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Smiles */
+.smiles {
+    width: 770px;
+    height: 250px;
+    margin: 0 auto 70px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.smiles-item {
+    width: 210px;
+    height: 210px;
+    
+}
+
+.smiles-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
+.smiles-btn {
+    padding: 20px 40px;
+}
+
+
+
+/* Prices */
+.prices {
+    height: 1197px;
+    margin-top: 50px;
+    padding-top: 20px;
+
+    background: url("../assets/imgs/backgrounds/4.jpg") no-repeat center;
+    background-size: cover;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.prices-inner {
+    position: relative;
+}
+
+.prices-photo {
+    width: max-content;
+    position: absolute;
+    top: 403px;
+}
+
+.price-list-item {
+    width:  100%;
+    height: 100%;
+    padding: 30px 20px 20px 30px;
+    margin-bottom: 30px;
+
+    background: white;
+    box-shadow: 5px 5px 14px 0px #585858;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 100%;
+
+    position: relative;
+}
+
+.price-left-side {
+    height: 100%;
+    min-height: 225px;
+}
+
+.price-list {
+    position: absolute;
+    top: 100px;
+    left: 500px;
+}
+
+.price-list-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.price-list-text {
+    overflow-y: scroll;
+
+    font-size: 0.9rem;
+}
+
+.price-right-side {
+    height: 100%;
+    text-align: right;
+    font-weight: 800;
+}
+
+.old-price {
+    font-size: 1.5rem;
+}
+
+.new-price {
+    font-size: 1.9rem;
+}
+
+.price-btn {
+    padding: 13px 45px;
+
+    position: absolute;
+    top: 218px;
+    right: 35px;
+}
+
+.prices-btn {
+    position: absolute;
+    top: 1023px;
+    left: 500px;
+    padding: 20px 40px;
+}
+
+
+
+
+/* Feed-Back */
+.feed-back {
+    height: 600px;
+    padding-top: 70px;
+    background: url("../assets/imgs/backgrounds/5.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.form {
+    width: 400px;
+    height: 400px;
+    margin: 20px auto 0;
+    padding: 20px 0;
+
+    border: 2px solid #009fe3;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.form-title {
+    font-size: 1.3rem;
+}
+
+.form-text {
+    width: 290px;
+    margin: 15px 0 20px;
+}
+
+.form-title,
+.form-text {
+    font-weight: 800;
+}
+
+.input {
+    width: 286px;
+    height: 45px;
+    margin-bottom: 25px;
+    padding-left: 25px;
+
+    border: none;
+    border-radius: 10px;
+    background: #009fe3;
+    color: white;
+}
+
+.input::placeholder {
+    color: white;
+}
+
+.policy {
+    width: 300px;
+
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.decorated {
+    color: #009fe3;
+    text-decoration: underline;
+}
+
+.form-btn {
+    margin-top: 35px;
+    padding: 10px 40px;
+}
+
+
+/* Footer */
+footer {
+    background: #1d1a1a;
+    height: 100%;
+    padding-top: 10px;
+}
+
+.footer-nav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footer-item,
+.footer-link {
+    color: #e6e6e6;
+    font-size: 1.3rem;
+}
+
+.inner-item {
+    margin-right: 10px;
+}
+
+.inner-link {
+    font-size: 1.5rem;
+}
+
+/* Common Styles */
+.hidden {
+    display: none;
+}
+
+section {
+    height: 100%;
+}
+
+
+
+
+
+
+
+/* Media */
+
+@media(max-width: 1200px) {
+
+    /* Header */
+    .doctor-photo {
+        top: 352px;
+        left: 167px;
+        z-index: 1;
+        width: 410px;
+    }
+
+    .big {
+        top: 410px;
+        left: 120px;
+    }
+
+    .stroke {
+        top: 317px;
+        left: 22px;
+    }
+
+    .left-side {
+        width: 505px;
+    }
+
+    /* Promo */
+    .promo-picture {
+        left: 673px;
+    }
+
+    .promo-right-side {
+        left: 888px;
+    }
+
+
+}
+
+@media(max-width: 1024px) {
+    html {
+        font-size: 13px;
+    }
+
+    /* header */
+    .logo {
+        width: 275px;
+    }
+
+    .small {
+        display: none;
+    }
+
+    .doctor-photo {
+        left: 100px;
+    }
+
+    .big {
+        left: 52px;
+    }
+
+    .stroke {
+        left: -40px;
+    }
+
+    .header-btn {
+        margin-top: 115px;
+    }
+
+    .left-side {
+        width: 420px;
+    }
+
+    /* Promo */
+    .promo-grid {
+        display: block;
+        width: 430px;
+    }
+    
+    .promo-picture {
+        left: 467px;
+        top: 323px;
+    }
+    
+    .promo-right-side {
+        left: 682px;
+        top: 196px;
+    }
+
+
+    /* Advantages */
+    .advantages-slider {
+        margin-top: 120px;
+    }
+
+
+
+
+    /* Prices */
+    .price-btn {
+        top: 220px;
+        right: 45px;
+    }
+    
+    .prices-btn {
+        top: 140px;
+        left: 108px;
+    }
+    
+}
+
+@media(max-width: 768px) {
+    html {
+        font-size: 10px;
+    }
+
+    .header {
+        height: 866px;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .shedule-time {
+        width: 180px;
+    }
+
+    .big {
+        display: none;
+    }
+
+    .stroke {
+        display: none;
+    }
+
+    .doctor-photo {
+        width: 336px;
+        left: 4px;
+    }
+
+    .left-side {
+        width: 340px;
+    }
+
+
+
+
+    /* Discounts */
+    .discounts {
+        margin-top: 60px;
+    }
+
+    .discounts-title {
+        margin-top: 60px;
+    }
+
+    .discounts-figure {
+        width: 430px;
+        height: 250px;
+        margin: 0 auto;
+    }
+
+    .discount-text {
+        width: 430px;
+    }
+
+
+
+
+
+    /* Promo */
+    .promo {
+        margin-top: 80px;
+    }
+
+    .promo-grid {
+        margin-top: 0;
+        width: 360px;
+    }
+
+    .promo-btn {
+        padding: 15px 20px;
+        margin: -70px 0px 25px 35px;
+    }
+
+    .promo-picture {
+        left: 370px;
+        top: 235px;
+    }
+
+    .promo-photo {
+        height: 300px;
+    }
+
+    .promo-right-side {
+        left: 545px;
+        top: 145px;
+    }
+
+
+
+
+    /* Cert */
+    .cert-photo {
+        width: 200px;
+        height: 250px
+    }
+
+
+
+
+    /* Prices */
+    .prices {
+        height: 1134px;
+    }
+
+    .prices-photo {
+        display: none;
+    }
+
+    .price-list {
+        top: 70px;
+        left: 0;
+    }
+
+    .price-list-item {
+        width: 90%;
+        margin: 0 auto 30px;
+    }
+
+    .prices-btn {
+        top: 987px;
+        left: 275px;
+    }
+
+    .price-list-title {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+    .price-list-text {
+        font-size: 1.5rem;
+    }
+
+    
+}
+
+@media(max-width: 425px) {
+    html {
+        font-size: 7px;
+    }
+
+    .section-header-title {
+        font-size: 2.5rem;
+    }
+
+    /* Header */
+    .header {
+        height: 400px;
+    }
+
+    .top-header {
+        padding: 5px 0 0;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .shedule-time {
+        width: 126px;
+    }
+
+    .bot-header {
+        height: 100%;
+        padding-top: 35px;
+    }
+
+    .left-side {
+        text-align: right;
+        width: 195px;
+    }
+
+    .header-title {
+        text-align: right;
+    }
+
+    .header-text {
+        text-align: right;
+        width: 188px;
+        margin: 0;
+        display: inline-block;
+
+    }
+
+    .header-item {
+        background: #009fe362;
+        border-radius: 5px;
+    }
+    
+    .header-btn {
+        margin: 60px auto 0;
+        padding: 10px 15px;
+    }
+
+    .underlined {
+        display: inline-block;
+    }
+
+    .underlined::after {
+        margin-top: -6px;
+    }
+
+    .header-text {
+        font-size: 1.5rem;
+    }
+
+    .medium {
+        display: none;
+    }
+
+    .doctor-photo {
+        width: 200px;
+        top: 100px;
+    }
+
+
+
+
+
+    /* Discounts */
+    .discounts-list {
+        margin-bottom: 60px;
+    }
+    
+    .discounts-figure {
+        width: 330px;
+        height: 150px;
+    }
+
+    .section-header {
+        width: 200px;
+    }
+
+    .discount-text {
+    width: 320px;
+    }
+
+    .figure-photo {
+        width: 250px;
+    }
+
+    .home-btn {
+        width: 50px;
+        height: 50px;
+    }
+
+    .discount-text-list {
+        font-size: 1.4rem;
+    }
+
+
+
+    /* Advantages */
+    .advantages {
+        padding-bottom: 30px;
+    }
+
+    .advantages-text {
+        width: 270px;
+    }
+    
+    .advantages-slider {
+        margin-top: 55px;
+    }
+
+
+
+    /* Promo */
+    .promo-grid {
+        margin: 0 auto;
+        width: 330px;
+    }
+
+    .promo-text {
+        font-size: 1.4rem;
+    }
+
+    .promo-title {
+        font-size: 1.6rem;
+    }
+
+    .promo-btn {
+        padding: 10px;
+        font-size: 1.2rem;
+        margin: -70px auto 290px;
+    }
+
+    .promo-picture {
+        left: 47px;
+        top: 577px;
+    }
+
+    .promo-photo {
+        height: 200px;
+    }
+
+    .promo-header {
+        width: max-content;
+    }
+
+    .promo-right-side {
+        left: 164px;
+        top: 517px;
+    }
+
+    .promo-info {
+        top: 54px;
+        left: 10px;
+    }
+
+
+
+
+
+    /* Cert */
+    .cert {
+        margin-bottom: 25px;
+    }
+
+    .cert-photo {
+        width: 150px;
+        height: 200px;
+    }
+
+
+
+
+
+    /* Examples */
+    .examples-title {
+        width: auto;
+        font-weight: 700;
+        margin: 30px auto 40px;
+    }
+
+    .examples-btns {
+        width: auto;
+        padding: 0 15px;
+    }
+
+    .example-btn {
+        padding: 9px 20px;
+    }
+
+    .smiles {
+        width: auto;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .smiles-item {
+        margin: 10px 0;
+    }
+
+
+
+
+
+    /* Prices */
+    .price-btn {
+        padding: 10px 14px;
+    }
+
+    .prices-btn {
+        left: 120px;
+    }
+
+    .old-price {
+        font-size: 2.1rem;
+    }
+
+    .new-price {
+        font-size: 2.5rem;
+    }
+
+
+
+
+
+    /* Form */
+    .feed-back {
+        padding-top: 35px;
+    }
+
+    .form-title {
+        font-size: 2.5rem;
+    }
+
+    .form-text {
+        font-size: 2rem;
+    }
+
+    .policy {
+        font-size: 2rem;
+    }
+
+
+
+    /* Footer */
+    .footer-nav {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .inner-footer-nav {
+        flex-direction: row;
+    }
+
+    .footer-item, .footer-link {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 375px) {
+    
+
+    /* Header */
+
+    .header-link {
+        font-size: 1.56rem;
+    }
+
+    .doctor-photo {
+        left: -12px;
+    }
+
+    /* Promo */
+    .promo-grid {
+        margin: 0 auto;
+        width: 290px;
+    }
+
+    .promo-picture {
+        left: 18px;
+    }
+
+    .promo-right-side {
+        left: 135px;
+
+    }
+
+    /* Prices */
+    .prices {
+        height: 1290px;
+    }
+
+    .price-list {
+        top: 40px;
+    }
+    
+    .price-list-item {
+        margin: 0 auto 95px;
+    }
+
+    .price-btn {
+        padding: 10px 29px;
+        top: 294px;
+        right: 80px;
+    }
+
+    .prices-btn {
+        top: 1158px;
+        left: 90px;
+        font-size: 1.6rem;
+        padding: 15px;
+    }
+
+    /* Form */
+    .form {
+        width: 100%;
+    }
+
+}
+
+@media(max-width: 320px) {
+
+
+    /* Header */
+
+    .header-link {
+        font-size: 1.26rem;
+    }
+
+    .doctor-photo {
+        width: 160px;
+        top: 157px;
+    }
+
+    /* Discounts */
+
+    .discounts-figure {
+        width: 280px;
+    }
+
+    .figure-photo {
+        width: 210px;
+    }
+
+    .discount-text {
+        width: 270px;
+    }
+
+
+
+
+    /* Promo */
+    .promo-picture {
+        left: -9px;
+    }
+
+    .promo-right-side {
+        left: 108px;
+    }
+
+
+
+
+    /* Examples */
+    .examples-btns {
+        padding: 0 8px;
+    }
+
+    .example-btn {
+        padding: 9px 11px;
+    }
+
+
+
+    /* Prices */
+    .price-btn {
+        right: 53px;
+    }
+
+    .prices-btn {
+        left: 64px;
+    }
+
+
+
+
+    /* Form */
+    .input {
+        width: 240px;
+    }
+    
+    .policy {
+        width: 260px;
+    }
+}
